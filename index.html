@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div id="register">
+            <div><h1>Реєстрація на сервері:</h1></div>
+
+            <div><label for="login">Логін:</label></div>
+            <div><input type="text" name="login" id="login" minlength="5" required></div>
+
+            <div><label for="password">Пароль:</label></div>
+            <div><input type="password" name="password" id="password" minlength="8" required></div>
+
+            <div><label for="pass-conf">Підтвердження:</label></div>
+            <div><input type="password" name="pass-conf" id="pass-conf" minlength="8" required></div>
+            
+            <div><hr></div>
+
+            <div><label for="name">Повне ім'я (ПІБ):</label></div>
+            <div><input type="text" name="name" id="name" minlength="6" required></div>
+
+            <div><label>Стать</label></div>
+            <div class="gend">
+                <label>
+                    <input type="radio" name="gender" id="gender" value="male">
+                    <span>чоловіча</span>
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <span>жіноча</span>
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="other">
+                    <span>інша</span>
+                </label>
+            </div>
+
+            <div><label>Іноземні мови:</label></div>
+            <div class="lang">
+                <label>
+                    <input type="checkbox" name="lang" id="lang">
+                    <span>Англійська</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="lang" id="lang">
+                    <span>Німецька</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="lang" id="lang">
+                    <span>Французька</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="lang" id="lang">
+                    <span>Іспанська</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="lang" id="lang">
+                    <span>Італійська</span>
+                </label>
+            </div>
+
+            <div><label for="scope">Сфера діяльності</label></div>
+            <div>
+                <select name="scope" id="scope">
+                    <option value="">освіта</option>
+                    <option value="">робота</option>
+                    <option value="">отримання інформації</option>
+                    <option value="">інша</option>
+                </select>
+            </div>
+
+            <div><label for="email">e-mail</label></div>
+            <div><input type="email" name="email" id="email" required></div>
+
+            <div><label for="addition">Додаткова інформація</label></div>
+            <div><textarea name="addition" id="addition" cols="20" rows="6"></textarea></div>
+
+            <div>
+                <input type="submit" value="Готово">
+                <input type="reset" value="Скасування">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
